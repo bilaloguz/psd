@@ -1,0 +1,11 @@
+<html>
+	<body>
+	<form method="POST" action="/save">
+	<h1>General Settings</h1>
+		{% for k, v in general_settings.items() %}
+			<label> {{k}}: </label> <input type="text" value={{v}} /> <br>
+		{% endfor %}
+	<input type="submit" value="Save" name="save">
+	</form>
+	</body>
+</html>
